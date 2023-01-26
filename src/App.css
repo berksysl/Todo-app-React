@@ -3,3 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+li h2 {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+img {
+    height: 22px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
