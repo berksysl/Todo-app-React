@@ -10,8 +10,10 @@ function App() {
   return (
     <div className="App">
       <h1>TODO APP</h1>
-      <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
-      <TodoList todos={todos} setTodos={setTodos}/>
+      <section id='container'>
+        <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText}/>
+        <TodoList todos={todos} setTodos={setTodos}/>
+      </section>
     </div>
   );
 }

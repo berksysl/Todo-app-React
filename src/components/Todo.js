@@ -18,10 +18,10 @@ function Todo({text, setTodos, todos, todo}) {
     }
 
   return (
-    <li>
-        <h2 className={`${todo.completed ? "completed" : ""}`}>{(todos.indexOf(todo) + 1) + " " + text}</h2>
-        <button onClick={completeHandler}><img src={checkIcon} alt="check"></img></button>
-        <button onClick={deleteHandler}><img src={trashIcon} alt="delete"></img></button>
+    <li className='listItem'>
+        <h2 className={`${todo.completed ? "completed" : ""}`}><span className='indexNo'>{(todos.indexOf(todo) + 1) + ". "}</span>{text}</h2>
+        <button className='checkBtn' onClick={completeHandler}><img src={checkIcon} alt="check"></img></button>
+        <button className='deleteBtn' onClick={deleteHandler}><img src={trashIcon} alt="delete"></img></button>
     </li>
   )
 }

@@ -1,7 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #FF0F7B, #F89B29);
+    font-family: 'Poppins', sans-serif;
+    color: #ffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 li h2 {
@@ -16,4 +31,72 @@ img {
 .completed {
     text-decoration: line-through;
     opacity: 0.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+#textInput {
+    padding: 10px 15px;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+#submitBtn {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    margin: 20px auto;
+    font-size: 22px;
+    background-color: #3e3e3e;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#taskHeader {
+    background-color: black;
+    color: white;
+    font-weight: 300;
+    width: fit-content;
+    padding: 10px 20px;
+}
+
+.listItem {
+    width: 100%;
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.listItem h2 {
+    padding: 10px 5px 10px 20px;
+    width: 150px;
+    text-align: start;
+}
+
+ul li{
+   margin-top: 30px; 
+}
+
+.indexNo {
+    color: black;
+    opacity: 0.5;
+}
+
+.checkBtn, .deleteBtn {
+    border:none;
+    padding: 14px;
+}
+
+.checkBtn {
+    background-color: #86af53;
+}
+
+.deleteBtn {
+    background-color: #e92a2a;
 }
