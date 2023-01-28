@@ -8,7 +8,7 @@
 }
 
 body {
-    height: 100vh;
+    padding: 30px 10px;
     background: linear-gradient(to right, #FF0F7B, #F89B29);
     font-family: 'Poppins', sans-serif;
     color: #ffff;
@@ -21,7 +21,7 @@ body {
 
 li h2 {
     display: inline-block;
-    margin-right: 100px;
+    max-width: 100%;
 }
 
 img {
@@ -67,16 +67,15 @@ li {
 }
 
 .listItem {
-    width: 100%;
     border: 1px solid black;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .listItem h2 {
-    padding: 10px 5px 10px 20px;
-    width: 150px;
-    text-align: start;
+    padding: 10px 0px 10px 20px;
 }
 
 ul li{
@@ -88,9 +87,14 @@ ul li{
     opacity: 0.5;
 }
 
+.btns {
+    margin-left: 30px;
+}
+
 .checkBtn, .deleteBtn {
     border:none;
     padding: 14px;
+    cursor: pointer;
 }
 
 .checkBtn {
@@ -99,4 +103,11 @@ ul li{
 
 .deleteBtn {
     background-color: #e92a2a;
+}
+
+@media screen and (max-width: 713px) {
+    .checkBtn, .deleteBtn {
+        height: 50%;
+        width: 100%;
+    }
 }
